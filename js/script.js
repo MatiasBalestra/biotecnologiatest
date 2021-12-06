@@ -224,20 +224,31 @@ const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const submitBtn = document.getElementById("submit");
+const correctasEl = document.getElementById("correctas");
+const incorrectasEl = document.getElementById("incorrectas");
+
 
 let currentQuiz = 0;
 let score = 0;
+let fscore=0;
+
 
 loadQuiz();
 
 function loadQuiz() {
     deselectAnswers();
 
+
     const currentQuizData = quizData[currentQuiz];
+
+
 
     questionEl.innerText = currentQuizData.question;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
+    correctasEl.innerText  = "Respuestas Correctas " + score;
+    incorrectasEl.innerText  = "Respuestas Incorrectas " + fscore;
+
 }
 
 function getSelected() {
@@ -262,9 +273,14 @@ submitBtn.addEventListener("click", () => {
     // check to see the answer
     const answer = getSelected();
 
+
     if (answer) {
         if (answer === quizData[currentQuiz].correct) {
             score++;
+        }
+
+        if (answer !== quizData[currentQuiz].correct) {
+            fscore++;
         }
 
         currentQuiz++;
@@ -276,5 +292,7 @@ submitBtn.addEventListener("click", () => {
                 <button onclick="location.reload()">Reload</button>
             `;
         }
+
+
     }
 });
