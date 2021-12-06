@@ -1,3 +1,21 @@
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+  }
+
 const quizData = [
     {
         question: "En una central hidroeléctrica la energía eléctrica se transforma en energía cinética, que es transportada hasta los puntos de consumo.",
@@ -217,6 +235,8 @@ const quizData = [
     }
 
 ];
+
+shuffle(quizData);
 
 const quiz = document.getElementById("quiz");
 const answerEls = document.querySelectorAll(".answer"); //Radiobuttons
