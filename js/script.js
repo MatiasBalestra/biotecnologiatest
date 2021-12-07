@@ -18,6 +18,12 @@ function shuffle(array) {
 
 const quizData = [
     {
+        question: "La primer Ley de la Termodinámica es la Ley de Conservación de la Energía.",
+        a:"Verdadero",
+        b:"Falso",
+        correct: "a",
+    },
+    {
         question: "En una central hidroeléctrica la energía eléctrica se transforma en energía cinética, que es transportada hasta los puntos de consumo.",
         a:"Verdadero",
         b:"Falso",
@@ -31,6 +37,18 @@ const quizData = [
     },
     {
         question: "La generación de energía eléctrica a partir de una corriente de agua es una de las formas de  generación más utilizadas en el mundo.",
+        a:"Verdadero",
+        b:"Falso",
+        correct: "a",
+    },
+    {
+        question: "Las centrales hidroeléctricas, pequeñas explotaciones o mini hidráulica, son las que generan hasta 50 MW, según la Normativa Nacional.",
+        a:"Verdadero",
+        b:"Falso",
+        correct: "a",
+    },
+    {
+        question: "Las centrales hidroeléctricas, pequeñas explotaciones o mini hidráulica, tienen un impacto ambiental menor que las centrales hidroeléctricas cómo Salto Grande.",
         a:"Verdadero",
         b:"Falso",
         correct: "a",
@@ -225,14 +243,26 @@ const quizData = [
         question: "La pila de hidrógeno genera energía eléctrica y agua.",
         a:"Verdadero",
         b:"Falso",
-        correct: "b",
+        correct: "a",
     },
     {
         question: "La biotecnología utiliza organismos vivos o derivados de ellos; para generar productos útiles.",
         a:"Verdadero",
         b:"Falso",
         correct: "a",
-    }
+    },
+    {
+        question: "La biotecnología tradicional se basa en el conocimiento empírico mientras que la biotecnología moderna en el conocimiento científico.",
+        a:"Verdadero",
+        b:"Falso",
+        correct: "a",
+    },
+    {
+        question: "La preparación de alimentos fermentados se viene dando desde 6000 años A. C.",
+        a:"Verdadero",
+        b:"Falso",
+        correct: "a",
+    },
 
 ];
 
