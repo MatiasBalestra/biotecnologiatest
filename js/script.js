@@ -123,7 +123,7 @@ const quizData = [
         question: "La energía desde el sol se transmite a través de ondas electromagnéticas.",
         a:"Verdadero",
         b:"Falso",
-        correct: "b",
+        correct: "a",
     },
     {
         question: "El efecto fotoeléctrico, es el fenómeno que explica la transformación de la energía solar en eléctrica.",
@@ -183,7 +183,7 @@ const quizData = [
         question: "Una energía, considerada renovable, puede reponerse a una velocidad mayor que la velocidad de consumo.",
         a:"Verdadero",
         b:"Falso",
-        correct: "b",
+        correct: "a",
     },
     {
         question: "El petróleo, es una fuente de energía no renovable; a partir de la cual se obtiene solamente nafta y gas oil utilizados como combustibles.",
@@ -357,13 +357,13 @@ const quizData = [
         question: "En Argentina los cultivos OGM tienen escasa difusión",
         a:"Verdadero",
         b:"Falso",
-        correct: "a",
+        correct: "b",
     },
     {
         question: "El algodón Bt .tiene resistencia a la sequía.",
         a:"Verdadero",
         b:"Falso",
-        correct: "a",
+        correct: "b",
     },
     {
         question: "La biotecnología no tiene repercusiones éticas.",
